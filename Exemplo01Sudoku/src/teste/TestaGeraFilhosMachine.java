@@ -5,7 +5,7 @@ import java.util.Collection;
 import dao.Dao;
 import entity.Estado;
 import entity.Tabuleiro;
-import entity.utils.GeraFilhosMachine;
+import solver.GeraFilhosMachine;
 
 public class TestaGeraFilhosMachine {
 	

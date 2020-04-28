@@ -1,4 +1,4 @@
-package entity.utils;
+package solver;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,7 +8,7 @@ import entity.Tabuleiro.Coordenada;
 
 public class GeraFilhosMachine {
 	
-	Estado estadoPai;
+	private Estado estadoPai;
 	
 	public GeraFilhosMachine(Estado aEstadoPai) {
 		this.estadoPai = aEstadoPai;
