@@ -2,9 +2,9 @@ package entity.grafo;
 
 public class Coordenada {
 	
-	int x, y;
+	double x, y;
 	
-	public Coordenada(int aX, int aY) {
+	public Coordenada(double aX, double aY) {
 		this.x = aX;
 		this.y = aY;
 	}
