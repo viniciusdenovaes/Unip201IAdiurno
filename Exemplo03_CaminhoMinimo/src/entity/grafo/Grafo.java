@@ -36,6 +36,14 @@ abstract public class Grafo {
 	public int getSize() {
 		return this.vertices.size();
 	}
+	
+	public static double distanciaEuclidiana(Vertice v1, Vertice v2) {
+		return distancia(v1.getCoord(), v2.getCoord());
+	}
+	
+	public static double distancia(Coordenada c1, Coordenada c2) {
+		return Math.sqrt((c1.x - c2.x)*(c1.x - c2.x) + (c1.y - c2.y)*(c1.y - c2.y));
+	}
 
 	@Override
 	public String toString() {

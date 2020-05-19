@@ -10,14 +10,17 @@ public class Solver {
 	
 	Estado inicial;
 	Estado solucao;
+	int iteracoes;
 	
 	public Solver() {
 		inicial = new Estado(new Caminho(Instance.getOrigem()));
 	}
 	
 	public void solve(EstadoAbertos ea) {
+		iteracoes = 0;
 		ea.push(inicial);
 		while(ea.size()>0) {
+			iteracoes++;
 			Estado estado = ea.pop();
 			if(estado.isObjetivo()) {
 				solucao = estado;
@@ -29,6 +32,9 @@ public class Solver {
 			}
 		}
 		
+	}
+	public int getIteracoes() {
+		return this.iteracoes;
 	}
 	
 	public Estado getSolution() {

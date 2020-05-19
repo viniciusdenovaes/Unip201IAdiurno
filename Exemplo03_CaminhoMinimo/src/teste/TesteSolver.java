@@ -3,6 +3,7 @@ package teste;
 import dao.Dao;
 import entity.grafo.Grafo;
 import estruturas.estados_abertos.Fila;
+import estruturas.estados_abertos.FilaDePrioridade;
 import estruturas.estados_abertos.Pilha;
 import solver.Instance;
 import solver.Solver;
@@ -18,8 +19,10 @@ public class TesteSolver {
 		
 		Solver s = new Solver();
 //		s.solve(new Pilha());
-		s.solve(new Fila());
+//		s.solve(new Fila());
+		s.solve(new FilaDePrioridade());
 		System.out.println(s.getSolution());
+		System.out.println("Iteracoes: " + s.getIteracoes());
 		
 		
 	}
